@@ -10,7 +10,7 @@ navToggle.addEventListener("click", () =>{
         navToggle .setAttribute("aria-expanded", true)
     }else if (visibility==="true"){
         primaryNav.setAttribute("data-visible", false);
-        navToggle .setAttribute("aria-expanded", false)
+        navToggle .setAttribute("aria-expanded", true)
     }
 
 });

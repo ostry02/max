@@ -20,7 +20,8 @@ nav li {
 }
 #logo{
     margin:2em 0 1em 6em;
-    width: 12em;
+    width:100px;
+    height:100px;
 }
 .primary-header{
     align-items: center;
@@ -69,7 +70,7 @@ nav li {
     color: white;
     background-color: rgb(168, 1, 1);
 }
-@media only screen and (max-width: 820px) {
+@media only screen and (max-width: 1260px) {
     .primary-navigation{
         position:fixed;
         --gap:3em ;
@@ -92,18 +93,18 @@ nav li {
         position: fixed;
         width: 2rem;
         aspect-ratio: 1;
-        top: 5em;
+        top: 3.5em;
         right: 2rem;
         z-index: 10000;
         display: block;
-        background-image: url("hamburger.jpg");
+        background-image: url('');
         background-repeat: no-repeat;
         background-size: contain;
         border: none;
         
     }
-    .mobile-nav-toggle[aria-expanded = "true"]{
-        background-image: url("x1.jpeg");
+    .mobile-nav-toggle [aria-expanded="true"]{
+        background-image: url('');
     }
 }
 main{
@@ -171,29 +172,46 @@ main{
     width: 200px;
     height: 200px;
 }
-#trzy li{
-    list-style: none;
-    font-weight: 1000;
-    font-size: 24px;
-    margin-top: 40px;
-}
-#trzy ul{
-    margin-top: 80px;
-    padding-right: 50px;
-}
-@media only screen and (max-width: 1040px) { /*male*/
+@media only screen and (max-width: 1120px) { /*male*/
     #trzy li{
         text-align: center;
-    }
-}
-@media only screen and (min-width: 1040px) { /*duze*/
-    #trzy li{
+        list-style: none;
         margin-left: auto;
-        margin-right: auto; 
-        text-align: center;
+        margin-right: auto;
+        font-weight: 1000;
+        font-size: 24px;
+        margin-top: 40px;
     }
     #trzy ul{
-        display: flex;       
+        margin-top: 80px;
+    }
+    #trzy img{
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+@media only screen and (min-width: 1120px) { /*duze*/
+    #trzy li{
+        list-style: none;
+        margin-left: auto;
+        margin-right: auto; 
+        padding-right:80px ;
+        font-weight: 1000;
+        font-size:1.2em;
+        text-align: center;
+        
+    }
+    #trzy ul{
+        display: flex;
+        margin-top: 60px;
+        
+    }
+    .instrukcja-logo{
+        display: block;
+    }
+    #trzy img{
+        margin-right: auto;
+        margin-left: auto;
     }
 }
 #wybierz{
@@ -238,7 +256,7 @@ ul{
     box-sizing: border-box;
     width: 50px;
 }
-@media only screen and (max-width: 820px) { /*male*/
+@media only screen and (max-width: 1090px) { /*male*/
     #logocale{
         padding-top: 20px;
         padding-bottom: 10px;
@@ -274,7 +292,7 @@ ul{
     }
 }
 
-@media only screen and (min-width: 820px) { /*duze*/
+@media only screen and (min-width: 1090px) { /*duze*/
     #logocale{
         width: 300px;
         margin-right:50px;
