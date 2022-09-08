@@ -20,8 +20,7 @@ nav li {
 }
 #logo{
     margin:2em 0 1em 6em;
-    width:100px;
-    height:100px;
+    width: 12em;
 }
 .primary-header{
     align-items: center;
@@ -70,7 +69,7 @@ nav li {
     color: white;
     background-color: rgb(168, 1, 1);
 }
-@media only screen and (max-width: 1260px) {
+@media only screen and (max-width: 820px) {
     .primary-navigation{
         position:fixed;
         --gap:3em ;
@@ -93,18 +92,18 @@ nav li {
         position: fixed;
         width: 2rem;
         aspect-ratio: 1;
-        top: 3.5em;
+        top: 5em;
         right: 2rem;
         z-index: 10000;
         display: block;
-        background-image: url('');
+        background-image: url("hamburger.jpg");
         background-repeat: no-repeat;
         background-size: contain;
         border: none;
         
     }
-    .mobile-nav-toggle [aria-expanded="true"]{
-        background-image: url('');
+    .mobile-nav-toggle[aria-expanded = "true"]{
+        background-image: url("x1.jpeg");
     }
 }
 main{
@@ -172,7 +171,7 @@ main{
     width: 200px;
     height: 200px;
 }
-@media only screen and (max-width: 1120px) { /*male*/
+@media only screen and (max-width: 1040px) { /*male*/
     #trzy li{
         text-align: center;
         list-style: none;
@@ -190,7 +189,7 @@ main{
         margin-left: auto;
     }
 }
-@media only screen and (min-width: 1120px) { /*duze*/
+@media only screen and (min-width: 1040px) { /*duze*/
     #trzy li{
         list-style: none;
         margin-left: auto;
@@ -256,7 +255,7 @@ ul{
     box-sizing: border-box;
     width: 50px;
 }
-@media only screen and (max-width: 1090px) { /*male*/
+@media only screen and (max-width: 820px) { /*male*/
     #logocale{
         padding-top: 20px;
         padding-bottom: 10px;
@@ -292,7 +291,7 @@ ul{
     }
 }
 
-@media only screen and (min-width: 1090px) { /*duze*/
+@media only screen and (min-width: 820px) { /*duze*/
     #logocale{
         width: 300px;
         margin-right:50px;
