@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Max Printer | Twoje drukarki w mieście</title>
+        <meta name="description" content="Drukarki w mieście">
+        <meta name="keywords" content="Drukarka, mobilna, miasto, online">
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/png" href="3.png">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/fe8143ceec.js" crossorigin="anonymous"></script>
+        <script src="nav.js" defer></script>    
+    </head>
+    <body>
+        <header class="primary-header flex">
+            <div>                      
+            <a href="#"><img id="logo" src="logo.png" alt="MAX PRINTER"></a>
+        </div>
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"></button>      
+                <nav> 
+                <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+                    <li class="lista" ><a href="#">Twoje drukarki</a></li>
+                    <li class="lista" ><a href="#">Dołącz do nas</a></li>
+                    <li class="lista" ><a href="#">Jak wydrukować</a></li>
+                    <li class="lista" ><a href="#">Kontakt</a></li>
+                    <li id="drukuj-margin"><a id="drukuj" href="#">Drukuj</a></li>
+                </ul>
+            </nav>             
+        </header>
+        <main> 
+            <div id="jeden">
+                <h2 class="opis">
+                    Drukuj <span>moblilnie</span>  w swojej okolic <br>
+                    w ponad <span id="liczba">1</span> miejscach w całej Polsce
+                    <p class="drukuj">Drukuj</p></h2>                
+            </div>
+            <div id="dwa">
+                <h1>Znajdź Najbliższą Drukarkę</h1>
+                <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d160255.4106076734!2d16.9918639!3d51.1270779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fe9c2d4b58abf%3A0xb70956aec205e0f5!2zV3JvY8WCYXc!5e0!3m2!1spl!2spl!4v1659463916830!5m2!1spl!2spl"></iframe>
+            </div>
+            <div id="trzy">
+                <h1>Trzy Kroki do Wydruku</h1>
+                <div id="cale"></div>
+                    <ul>
+                        <li>1. Znajdź drukarkę i dodaj dokument
+                        <figure><img class="instrukcja-logo" src="1.1.png"></figure></li>
+                        <li>2. Zapłać moblilnie
+                        <figure><img class="instrukcja-logo" src="2.png"></figure></li>
+                        <li>3. Odbierz wydrukowany dokument
+                        <figure><img class="instrukcja-logo" src="3.png"></figure></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="wybierz">
+                Wybierz drukarkę
+            </div>
+        </main>
+        <footer>
+            <img id="logocale" src="logo.png" alt="logo">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h2>Kontakt</h2>
+                        <ul class="linki">
+                            <li><a href="">Email:maxprinter@biuro.pl</a></li>
+                            <li><a href="">Telefon:+48 111 222 333</a></li>
+                            <a href=""><span class="fa-brands fa-facebook-f social"></span></a>
+                            <a href=""><span class="fa-brands fa-twitter social"></span></a>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h2>Informacje</h2>
+                        <ul class="linki stale">
+                            <li><a href="">O nas</a></li>
+                            <li><a href="">FAQ</a></li>
+                            <li><a href="">Regulamin</a></li>
+                            <li><a href="">Pliki COOKIES</a></li>
+                            <li><a href="">Prywatności</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h2>Dołącz do nas</h2>
+                        <ul class="linki stale">
+                            <li><a href="">Kawiarnie</a></li>
+                            <li><a href="">Szkoły i Uczelnie</a></li>
+                            <li><a href="">Centra handlowe</a></li>
+                            <li><a href="">Biblioteki</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
+

@@ -1,0 +1,332 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0 0 0 0;
+    font-family: 'Varela Round', sans-serif;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+}
+nav li {
+    font-size:1em;
+    font-weight: 800;
+    color: black;
+}
+.flex{
+    display: flex;
+    gap: var(--gap, 3rem);
+}
+#logo{
+    margin:2em 0 1em 6em;
+    width:100px;
+    height:100px;
+}
+.primary-header{
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 1);
+    width: 100%;
+    top: 0;
+}
+.primary-navigation{
+    list-style: none;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    padding-right: 6em;
+    font-weight: 900;
+}
+.primary-navigation a{
+
+    color: black;
+    transition: all 300ms ease-in-out;
+}
+.primary-header a:hover{
+    color: rgb(168, 1, 1);
+}
+.mobile-nav-toggle{
+    display: none;
+}
+.lista{
+    
+    margin-top: 1em;
+}
+#drukuj-margin{
+    margin-top: 1em;
+}
+#drukuj{
+    padding: 12px;
+    border: 4px solid black;
+    border-radius: 25px;
+    font-size: 30px;
+    background-color: red;
+    color: white;
+    transition: 300ms ease-in-out;
+    
+}
+#drukuj:hover{
+    color: white;
+    background-color: rgb(168, 1, 1);
+}
+@media only screen and (max-width: 1260px) {
+    .primary-navigation{
+        position:fixed;
+        --gap:3em ;
+        inset: 0 0 0 60%;
+        background-color: rgba(255, 255, 255, 1);
+        
+        flex-direction: column-reverse;
+        padding:  12rem 2em;
+        z-index: 1000;
+        transform: translateX(100%);
+        transition: transform 350ms ease-out;
+        font-weight: 900;
+        font-size: 1.2rem;
+        overflow-x: scroll;
+    }
+    .primary-navigation[data-visible='true']{
+        transform: translateX(0%);
+    }
+    .mobile-nav-toggle{
+        position: fixed;
+        width: 2rem;
+        aspect-ratio: 1;
+        top: 3.5em;
+        right: 2rem;
+        z-index: 10000;
+        display: block;
+        background-image: url('');
+        background-repeat: no-repeat;
+        background-size: contain;
+        border: none;
+        
+    }
+    .mobile-nav-toggle [aria-expanded="true"]{
+        background-image: url('');
+    }
+}
+main{
+    
+}
+#jeden{
+    background-image:
+    linear-gradient(to right, rgba(56, 48, 48, 0.753),rgba(0, 0, 0, 0)),
+    url('https://thumbs.dreamstime.com/z/cozy-relaxing-coffee-shop-interior-people-barista-customers-inside-modern-cafe-men-women-resting-cafeteria-218483681.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 600px;
+}
+#jeden h2{
+    color: white;
+    padding-top:200px;
+    margin-left: 100px;
+    font-size: 60px;
+    z-index: 1;
+}
+.drukuj{
+    margin-top: 40px;
+    font-size: 35px;
+    color: black;
+    border: 4px solid black;
+    background-color: white;
+    border-radius: 25px;
+    padding: 15px;
+    width: min-content;
+    margin-left: 250px;
+    transition:  300ms ease-in-out;
+    cursor: pointer;
+}
+.drukuj:hover{
+    color: white;
+    background-color: rgb(168, 1, 1);
+}
+#jeden span{
+    color:red;
+    font-size: larger;
+}
+#jeden h2{
+    color: white;
+    margin-left: 50px;
+    font-size: 40px;
+}
+.mapa{
+    width: 100%;
+    height: 500px;
+}
+#dwa h1, #trzy h1, #wybierz{
+    color: black;
+    font-size: 40px;
+    font-weight: bolder;
+    text-align: center;
+}
+#trzy img{
+    margin: 0 auto;
+}
+.instrukcja-logo{
+    width: 200px;
+    height: 200px;
+}
+@media only screen and (max-width: 1120px) { /*male*/
+    #trzy li{
+        text-align: center;
+        list-style: none;
+        margin-left: auto;
+        margin-right: auto;
+        font-weight: 1000;
+        font-size: 24px;
+        margin-top: 40px;
+    }
+    #trzy ul{
+        margin-top: 80px;
+    }
+    #trzy img{
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+@media only screen and (min-width: 1120px) { /*duze*/
+    #trzy li{
+        list-style: none;
+        margin-left: auto;
+        margin-right: auto; 
+        padding-right:80px ;
+        font-weight: 1000;
+        font-size:1.2em;
+        text-align: center;
+        
+    }
+    #trzy ul{
+        display: flex;
+        margin-top: 60px;
+        
+    }
+    .instrukcja-logo{
+        display: block;
+    }
+    #trzy img{
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+#wybierz{
+    padding: 10px;
+    border: 4px solid black;
+    border-radius: 10px;
+    margin-top: 80px;
+    margin-bottom: 100px;
+    font-size: 22px;
+    width: 300px;
+    margin-right:  auto;
+    margin-left:  auto;
+    transition: 300ms ease-in-out;
+}
+#wybierz:hover{
+    color: white;
+    background-color: rgb(168, 1, 1);
+}
+footer{
+    clear: both;
+    background-color: grey;
+    color: white;
+}
+footer a{
+    color: white;
+}
+footer ul{
+    list-style: none;
+}
+ul{
+    line-height: 1.5em;
+    font-weight: 300;
+    font-size: large;
+}
+.footer-col h2::before{
+    content: '';
+    position: absolute;
+    left: 100;
+    bottom: -10px;
+    background-color: rgb(168, 1, 1);
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+@media only screen and (max-width: 1090px) { /*male*/
+    #logocale{
+        padding-top: 20px;
+        padding-bottom: 10px;
+        width:300px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .linki{
+        text-align: center;
+    }
+    footer{
+        padding-bottom: 20px;
+        box-sizing: border-box;
+    }
+    .social{
+        margin-left: 30px;
+        padding-top: 10px;
+        width: 30px;
+    }
+    .footer-col{
+        width: 400px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .footer-col h2{
+        font-weight: 1000;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        position: relative;
+        left: 40px;
+    }
+}
+
+@media only screen and (min-width: 1090px) { /*duze*/
+    #logocale{
+        width: 300px;
+        margin-right:50px;
+        margin-top: 40px;
+        float: right;
+    }
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .footer-col{
+        width: 300px;
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+    .footer-col h2{
+        font-weight: 1000;
+        margin-bottom: 30px;
+        position: relative;
+        left: 35px;
+    }
+    .social{
+        display: inline-block;
+        margin-left: 50px;
+        padding-top: 10px;
+        width: 30px;
+    }
+    .stale a:hover{
+        color:rgb(168, 1, 1);
+        padding-left: 10px;
+        transition: 0.3s ease;
+    }
+    footer{
+        padding-bottom: 20px;
+        box-sizing: border-box;
+    }
+}
