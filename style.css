@@ -171,46 +171,29 @@ main{
     width: 200px;
     height: 200px;
 }
+#trzy li{
+    list-style: none;
+    font-weight: 1000;
+    font-size: 24px;
+    margin-top: 40px;
+}
+#trzy ul{
+    margin-top: 80px;
+    padding-right: 50px;
+}
 @media only screen and (max-width: 1040px) { /*male*/
     #trzy li{
         text-align: center;
-        list-style: none;
-        margin-left: auto;
-        margin-right: auto;
-        font-weight: 1000;
-        font-size: 24px;
-        margin-top: 40px;
-    }
-    #trzy ul{
-        margin-top: 80px;
-    }
-    #trzy img{
-        margin-right: auto;
-        margin-left: auto;
     }
 }
 @media only screen and (min-width: 1040px) { /*duze*/
     #trzy li{
-        list-style: none;
         margin-left: auto;
         margin-right: auto; 
-        padding-right:80px ;
-        font-weight: 1000;
-        font-size:1.2em;
         text-align: center;
-        
     }
     #trzy ul{
-        display: flex;
-        margin-top: 60px;
-        
-    }
-    .instrukcja-logo{
-        display: block;
-    }
-    #trzy img{
-        margin-right: auto;
-        margin-left: auto;
+        display: flex;       
     }
 }
 #wybierz{
